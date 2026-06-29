@@ -390,3 +390,52 @@ footer{
     color:white;
     font-size:16px;
 }
+
+/* Hamburger Menu */
+
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    color:white;
+}
+
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    #navbar{
+        display:none;
+        position:absolute;
+        top:80px;
+        right:20px;
+        background:#111827;
+        width:220px;
+        border-radius:10px;
+        padding:20px;
+        box-shadow:0 0 20px rgba(0,0,0,.4);
+    }
+
+    #navbar.active{
+        display:flex;
+        flex-direction:column;
+    }
+
+    #navbar a{
+        margin:12px 0;
+    }
+}
+
+#contact{
+    text-align: center;
+}
+
+#contact p{
+    margin: 15px 0;
+}
+
+#contact .contact-btn{
+    margin: 10px;
+}
